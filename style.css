@@ -10,7 +10,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--rosa-chiaro);
-    color: var--testo-colore;
+    color: var(--testo-colore);
     margin: 0;
     padding: 0;
 }
@@ -24,6 +24,7 @@ header {
     background-position: center;  
     background-repeat: no-repeat; 
     border-bottom: 3px solid var(--rosa-scuro);
+    position: relative; 
 }
 
 h1 {
@@ -31,6 +32,17 @@ h1 {
     color: var(--rosa-accento);
     margin: 0;
     text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+.header-img {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    width: 120px;  
+    height: auto;
+    border-radius: 8px; 
+    border: 2px solid var(--bianco);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .container {
