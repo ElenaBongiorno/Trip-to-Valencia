@@ -1,4 +1,3 @@
-/* Palette Rosa & Design Generale */
 :root {
     --rosa-chiaro: #fff0f3;
     --rosa-principale: #ffb3c1;
@@ -18,8 +17,11 @@ body {
 
 header {
     text-align: center;
-    padding: 40px 20px;
-    background: linear-gradient(135deg, #ffccd5, var(--rosa-principale));
+    padding: 60px 20px;
+    background-image: url('Brown Simple Aesthetic Photo Collage.png'); 
+    background-size: cover;      
+    background-position: center;  
+    background-repeat: no-repeat; 
     border-bottom: 3px solid var(--rosa-scuro);
 }
 
@@ -30,7 +32,6 @@ h1 {
     text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
 }
 
-/* Layout a 3 Colonne */
 .container {
     display: flex;
     justify-content: space-between;
@@ -40,7 +41,6 @@ h1 {
     margin: 0 auto;
 }
 
-/* Spazio sinistro (vuoto o per note) */
 .left-sidebar {
     flex: 1;
     background-color: var(--bianco);
@@ -50,7 +50,6 @@ h1 {
     min-height: 300px;
 }
 
-/* Spazio centrale: Le tendine (Accordion con i tag <details>) */
 .center-content {
     flex: 2;
     display: flex;
@@ -86,7 +85,6 @@ details p {
     line-height: 1.6;
 }
 
-/* Spazio destro: Foto di Valencia */
 .right-sidebar {
     flex: 1;
     background-color: var(--bianco);
@@ -119,7 +117,6 @@ details p {
     padding: 10px;
 }
 
-/* Se inserisci immagini reali via HTML, usa questa classe */
 .right-sidebar img {
     width: 100%;
     border-radius: 10px;
@@ -127,7 +124,6 @@ details p {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* Responsive per smartphone */
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
